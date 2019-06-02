@@ -35,7 +35,7 @@ public class Futebol extends Time{
     }
     
     public String joga(){
-        dataCriacao.setMonth(r.nextInt(12)+1);
+        dataCriacao.setMonth(r.nextInt(7)+6);
         dataCriacao.setDate(r.nextInt(30)+1);
         return dataCriacao.toString();
     }

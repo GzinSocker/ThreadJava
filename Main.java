@@ -19,7 +19,7 @@ public class Main {
         for(int i=0;i<5;i++){
             if(r.nextInt(2)==0){
                 t[i] = new Futebol();
-                System.out.println((i+1)+"º time. Proximo jogo: "+t[i].joga());
+                System.out.println((i+1)+"º TIME\nProximo jogo: "+t[i].joga());
             }
             else t[i]=new Basquete();
         }
