@@ -6,6 +6,8 @@
 package main;
 
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 
 /**
  *
@@ -14,15 +16,10 @@ import java.util.Random;
 
 public class Main {
     public static void main(String [] args){
-        Time[] t = new Time[5];
-        Random r = new Random();
-        for(int i=0;i<5;i++){
-            if(r.nextInt(2)==0){
-                t[i] = new Futebol();
-                System.out.println((i+1)+"º TIME\nProximo jogo: "+t[i].joga());
-            }
-            else t[i]=new Basquete();
-        }
+        Nadador.num=0;
+        Thread[] nadadores = new Thread[5];
+        long waitTime = System.currentTimeMillis(), curTime;
+        int cont=0;
         
     }
 }
